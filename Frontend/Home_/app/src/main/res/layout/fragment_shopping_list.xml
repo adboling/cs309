@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingList.ShoppingListFragment">
+    <TextView
+        android:id="@+id/shoppingList_title"
+        android:text="@string/shoppingList_title"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/shoppingList_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shoppingList_title"
+        android:layout_above="@id/shoppingList_nameGroup"/>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/shoppingList_nameGroup"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/shoppingList_amountGroup">
+        <android.support.design.widget.TextInputEditText
+            android:hint="@string/ShoppingListItem_NameHint"
+            android:id="@+id/shoppingList_nameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/shoppingList_amountGroup"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/shoppingList_unitGroup">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/shoppingList_amountField"
+            android:hint="@string/ShoppingListItem_AmountHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/shoppingList_unitGroup"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/shoppingList_addIngredient">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/shoppingList_unitField"
+            android:hint="@string/ShoppingListItem_UnitHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/shoppingList_addIngredient"
+        android:text="@string/shoppingList_addItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

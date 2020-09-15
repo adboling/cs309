@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".RecipeRacer.RecipeRaceFragment">
+
+    <Chronometer
+        android:id="@+id/rr_elapsedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="36sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rr_start_stop_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rr_elapsedTime" />
+    <Button
+        android:id="@+id/rr_connect_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toRightOf="@id/rr_start_stop_btn"
+        app:layout_constraintTop_toBottomOf="@id/rr_elapsedTime" />
+
+
+    <TextView
+        android:id="@+id/rr_sessionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="#"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rr_start_stop_btn" />
+
+    <ListView
+        android:id="@+id/rr_IngredientsList"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRecipe"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineRecipe"
+        app:layout_constraintTop_toBottomOf="@id/rr_sessionId"
+        tools:itemCount="7" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+    <TextView
+        android:id="@+id/rr_Steps"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toRightOf="@id/guidelineRecipe"
+        app:layout_constraintTop_toBottomOf="@id/rr_sessionId"
+
+        tools:layout_editor_absoluteX="8dp" />
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/rr_userProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/rr_progreessAll"
+        app:layout_constraintTop_toBottomOf="@+id/rr_Steps" />
+
+    <ListView
+        android:id="@+id/rr_progreessAll"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/rr_userProgress" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+
+        android:scrollbarStyle="outsideInset"
+        app:layout_constraintTop_toBottomOf="@+id/rr_userProgress">
+
+        <TextView
+            android:id="@+id/rr_textConvo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textSize="11dp" />
+    </ScrollView>
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" android:layout_width="340dp"
+        android:id="@+id/rr_textWindow"
+        app:layout_constraintRight_toLeftOf="@+id/SendMessageBtn">
+        <EditText android:id="@+id/rr_input_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textAutoComplete"
+            android:hint="Enter message here" android:autofillHints="" android:singleLine="false"/>
+    </android.support.design.widget.TextInputLayout>
+<Button
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toRightOf="@+id/rr_textWindow"
+    android:id="@+id/SendMessageBtn"
+    android:text="Send"/>
+
+</android.support.constraint.ConstraintLayout>
+

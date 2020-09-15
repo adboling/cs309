@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">Kitchen Korner</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- login strings -->
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="signUp">No account yet? Create one</string>
+    <string name="login">Login</string>
+    <string name="title_activity_sign_up_page">signUpPage</string>
+
+    <!-- recipe view strings -->
+    <string name="rView_title">Default Title</string>
+    <string name="rView_desc">Default description</string>
+    <string name="rView_steps">Default steps</string>
+    <string name="rView_date">Date posted: </string>
+    <string name="rView_creator">Creator: </string>
+    <string name="rView_numberServings">Number of servings: </string>
+    <string name="rView_totalTime">Total time: </string>
+    <string name="rView_prepTime">Prep time: </string>
+    <string name="rView_cookTime">Cook time: </string>
+    <string name="rView_tag">Default tag</string>
+    <string name="rView_commentButton">Go to comments</string>
+    <string name="rView_timelinebutton">Go to timeline</string>
+    <string name="start_race">Start Recipe Race Session</string>
+
+    <!-- recipe search strings -->
+    <string name="rSearch_hint">Search recipe keywords</string>
+    <string name="search">Search</string>
+    <string name="rSearch_typePrompt">Choose a search type</string>
+    <string-array name="rSearch_types">
+        <item>User recipe search</item>
+        <item>Yummly recipe search</item>
+        <item>Ingredient based search</item>
+    </string-array>
+
+    <!-- recipe creation strings -->
+    <string name="rCreate">Create Recipe</string>
+    <string name="rCreate_titleHint">Recipe Title</string>
+    <string name="rCreate_getPhoto">Get photo</string>
+    <string name="rCreate_takePhoto">Take photo</string>
+    <string name="rCreate_descriptionHint">Recipe description</string>
+    <string name="rCreate_stepsHint">Recipe steps</string>
+    <string name="rCreate_numberServingsHint">Number of servings</string>
+    <string name="rCreate_prepTimeHint">Prep time in minutes</string>
+    <string name="rCreate_totalTimeHint">Total time in minutes</string>
+    <string name="rCreate_tagsHint">Recipe tags</string>
+    <string name="rCreate_image">Recipe image</string>
+    <string name="rCreate_thumbnail">Recipe thumbnail</string>
+    <string name="rCreate_submit">Submit recipe</string>
+
+    <!-- ingredient input strings -->
+    <string name="rIngredient_nameHint">Ingredient name</string>
+    <string name="rIngredient_amountHint">Ingredient amount</string>
+    <string name="rIngredient_typeHint">Ingredient unit</string>
+    <string name="rIngredient_submit">Add ingredient</string>
+
+    <!--search Values-->
+    <string name="searchApp">searchApp</string>
+    <string name="searchHint">Search recipes or keywords</string>
+
+    <!--MytimeLine Values-->
+    <string name="dishName">Name of The Dish</string>
+
+    <!--RecipeRacer Strings-->
+    <string name="rr_selector">Recipe Racer</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="rr_start">Start Game</string>
+    <string name="rr_stop">Stop Game</string>
+    <string name="rr_pause">Pause Game</string>
+    <string name="rr_session">Session:</string>
+    <string name="rr_hint">Enter message here</string>
+    <string name="rr_send">Send</string>
+    <string name="rr_reset">Reset Timer</string>
+
+    <string name="delete">delete</string>
+    <string name="cancel">cancel</string>
+    <string name="welcome_to_admin_view">Welcome to admin view</string>
+    <string name="confirm">confirm</string>
+
+    <string name="save">Save</string>
+    <string name="SaveEdit">Save Edit</string>
+    <string name="edit_your_bio">Edit your Bio</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="get_photo">Get Photo</string>
+    <string name="generic_name">John Doe</string>
+    <string name="save_profile">Save Profile</string>
+
+
+    <!--Pantry String-->
+    <string name="pantry">View pantry</string>
+    <string name="pantry_add">Add Ingredient</string>
+    <string name="pantry_ingredient_type">Type</string>
+    <string name="pantry_ingredient_amount">Amount</string>
+    <string name="pantry_ingredient_unit">Unit</string>
+    <!--Pantry Item Holder Strings-->
+    <string name="pantry_item_default_text">Default Ingredient</string>
+    <string name="pantry_item_edit">Edit</string>
+    <string name="pantry_item_remove">Remove</string>
+    <string name="pantry_item_save">Save</string>
+    <string name="pantry_item_cancel">Cancel</string>
+
+    <!--User Search Strings-->
+    <string name="userSearch">Search Users</string>
+    <string name="userSearch_viewProfile">View Profile</string>
+    <string name="userSearch_search">Search</string>
+    <string name="userSearch_searchHint">Username</string>
+
+    <!--Friend Request Strings-->
+    <string name="friendRequest">View Friend Requests</string>
+    <string name="friendRequest_title">Friend Requests</string>
+    <string name="friendRequest_incoming">View Incoming</string>
+    <string name="friendRequest_outgoing">View Outgoing</string>
+    <!--Friend Request Holder Strings-->
+    <string name="friendRequestItem_accept">Accept</string>
+    <string name="friendRequestItem_decline">Decline</string>
+    <string name="friendRequestItem_cancel">Cancel</string>
+
+    <!-- Shopping List Strings-->
+    <string name="shoppingList">Open Shopping List</string>
+    <string name="shoppingList_title">Your Shopping List</string>
+    <string name="shoppingList_addItem">Add Ingredient</string>
+    <!-- Shopping List Item Strings-->
+    <string name="shoppingListItem_Fulfil">Fulfil</string>
+    <string name="shoppingListItem_Undo">Undo</string>
+    <string name="shoppingListItem_Edit">Edit</string>
+    <string name="ShoppingListItem_Remove">Remove</string>
+    <string name="ShoppingListItem_Save">Save</string>
+    <string name="ShoppingListItem_Cancel">Cancel</string>
+    <string name="ShoppingListItem_NameHint">Ingredient Name</string>
+    <string name="ShoppingListItem_AmountHint">Ingredient_Amount</string>
+    <string name="ShoppingListItem_UnitHint">Ingredient Unit</string>
+
+</resources>

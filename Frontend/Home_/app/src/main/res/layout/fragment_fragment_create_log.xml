@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".MyTimeline.Fragment_createLog"
+            android:orientation="vertical"
+            android:fillViewport="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+    <!-- Dish name -->
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recipe Name"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/user_profile_photo"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@color/cardview_dark_background"
+
+        android:visibility="visible" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/pickPic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Photo" />
+
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    />
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" android:layout_width="340dp">
+            <EditText android:id="@+id/input_Notes"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:inputType="textAutoComplete"
+                      android:hint="Enter your notes here" android:autofillHints="" android:singleLine="false"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button android:layout_width="wrap_content" android:layout_height="match_parent"
+                android:id="@+id/takeNoteButton" android:text="Enter" android:textAlignment="center"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/notes_list"
+        android:layout_width="match_parent"
+        android:layout_height="295dp" />
+
+
+
+</LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/SubmitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Submit Log"
+        android:visibility="visible" />
+</FrameLayout>

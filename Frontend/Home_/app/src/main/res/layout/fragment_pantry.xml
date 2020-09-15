@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pantry_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/pantry_type_tiet"/>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/pantry_type_tiet"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pantry_amount_tiet">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/pantry_type_in"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="textAutoComplete"
+            android:autofillHints=""
+            android:hint="@string/pantry_ingredient_type"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/pantry_amount_tiet"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pantry_unit_tiet">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/pantry_amount_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete"
+            android:autofillHints=""
+            android:hint="@string/pantry_ingredient_amount"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/pantry_unit_tiet"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pantry_add">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/pantry_unit_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete"
+            android:autofillHints=""
+            android:hint="@string/pantry_ingredient_unit"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/pantry_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/pantry_add"/>
+
+
+</RelativeLayout>

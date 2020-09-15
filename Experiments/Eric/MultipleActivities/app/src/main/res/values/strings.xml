@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MultipleActivities</string>
+    <string name="title_activity_option1">Option1Activity</string>
+    <string name="title_activity_option2">Option2Activity</string>
+</resources>

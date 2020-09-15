@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".RecipeComments.ViewRecipeCommentsFragment"
+              android:orientation="vertical"
+             >
+    <!-- Debug text to show recipe ID, name, and source
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rcomment_id"
+            android:text="Recipe ID"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rcomment_name"
+            android:text="Recipe Name"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rcomment_source"
+            android:text="Recipe Source"/>
+     Debug text to make sure PostComment() is working
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rcomment_debug"
+            android:text="Debug Out"/> -->
+
+    <!-- Comment Content Entry -->
+    <EditText android:id="@+id/input_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Comment Content"
+        android:autofillHints=""/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rview_comment_post"
+            android:text="Post comment"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rcomment_refresh"
+            android:text="Refresh Comments"/>
+    </LinearLayout>
+
+    <!-- Scrolling container for comments -->
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <!-- Container to hold comment fragments -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rview_comment_container"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:id="@+id/rcomment_debug_comment"
+                android:text="Debug Comment"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

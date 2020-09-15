@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:log_view="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/log_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    log_view:cardCornerRadius="8dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        log_view:layout_constraintEnd_toEndOf="parent"
+        log_view:layout_constraintHorizontal_bias="0.5"
+        log_view:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/recipeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:fontFamily="sans-serif-black"
+
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="This will be the Recipe Name"
+            android:textAlignment="viewEnd"
+            android:textSize="24sp"
+            android:visibility="visible"
+            log_view:layout_constraintEnd_toEndOf="parent"
+
+            log_view:layout_constraintHorizontal_bias="0.5"
+            log_view:layout_constraintStart_toStartOf="parent"
+            log_view:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/time_delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_delete24px"
+            android:visibility="visible"
+            log_view:layout_constraintEnd_toEndOf="parent"
+            log_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Log_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="3dp"
+            android:text="date"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            android:visibility="visible"
+            log_view:layout_constraintEnd_toEndOf="parent"
+            log_view:layout_constraintTop_toBottomOf="@id/recipeName" />
+
+        <ImageView
+            android:id="@+id/Recipe_image"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="8dp"
+
+            android:contentDescription="recipe Image"
+            android:visibility="visible"
+            android:scaleType="centerCrop"
+            log_view:layout_constraintEnd_toEndOf="parent"
+            log_view:layout_constraintHorizontal_bias="0.0"
+            log_view:layout_constraintStart_toStartOf="parent"
+            log_view:layout_constraintTop_toBottomOf="@+id/Log_date" />
+
+        <TextView
+            android:id="@+id/NotesText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="0"
+            android:paddingStart="4dp"
+            android:paddingTop="4dp"
+            android:text="Notes:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:visibility="visible"
+            log_view:layout_constraintTop_toBottomOf="@+id/Recipe_image" />
+
+
+        <ListView
+            android:id="@+id/notesList"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            log_view:layout_constraintTop_toBottomOf="@+id/NotesText"
+            tools:layout_editor_absoluteX="0dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/openRecipe_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+
+        android:padding="20dp"
+        android:text="Open Recipe" />
+</android.support.v7.widget.CardView>
